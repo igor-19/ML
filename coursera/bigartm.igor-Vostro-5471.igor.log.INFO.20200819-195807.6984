@@ -1,0 +1,4 @@
+Log file created at: 2020/08/19 19:58:07
+Running on machine: igor-Vostro-5471
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0819 19:58:07.024755  6984 c_interface.cc:127] Logging enabled to .
