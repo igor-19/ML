@@ -1,0 +1,139 @@
+|--- hypertension <= 0.50
+|   |--- ever_married_Yes <= 0.50
+|   |   |--- age <= 47.50
+|   |   |   |--- bmi <= 37.95
+|   |   |   |   |--- Residence_type_Urban <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Residence_type_Urban >  0.50
+|   |   |   |   |   |--- age <= 37.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- age >  37.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- bmi >  37.95
+|   |   |   |   |--- avg_glucose_level <= 70.46
+|   |   |   |   |   |--- bmi <= 38.10
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- bmi >  38.10
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- avg_glucose_level >  70.46
+|   |   |   |   |   |--- class: 0
+|   |   |--- age >  47.50
+|   |   |   |--- avg_glucose_level <= 80.56
+|   |   |   |   |--- class: 0
+|   |   |   |--- avg_glucose_level >  80.56
+|   |   |   |   |--- age <= 80.00
+|   |   |   |   |   |--- bmi <= 38.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- bmi >  38.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- age >  80.00
+|   |   |   |   |   |--- class: 0
+|   |--- ever_married_Yes >  0.50
+|   |   |--- heart_disease <= 0.50
+|   |   |   |--- age <= 53.50
+|   |   |   |   |--- Residence_type_Urban <= 0.50
+|   |   |   |   |   |--- work_type_Self-employed <= 0.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- work_type_Self-employed >  0.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Residence_type_Urban >  0.50
+|   |   |   |   |   |--- avg_glucose_level <= 143.29
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- avg_glucose_level >  143.29
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- age >  53.50
+|   |   |   |   |--- smoking_status_formerly smoked <= 0.50
+|   |   |   |   |   |--- age <= 67.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- age >  67.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- smoking_status_formerly smoked >  0.50
+|   |   |   |   |   |--- gender_Male <= 0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- gender_Male >  0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |--- heart_disease >  0.50
+|   |   |   |--- age <= 56.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- age >  56.50
+|   |   |   |   |--- work_type_Self-employed <= 0.50
+|   |   |   |   |   |--- smoking_status_smokes <= 0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- smoking_status_smokes >  0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- work_type_Self-employed >  0.50
+|   |   |   |   |   |--- gender_Male <= 0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- gender_Male >  0.50
+|   |   |   |   |   |   |--- class: 1
+|--- hypertension >  0.50
+|   |--- avg_glucose_level <= 76.38
+|   |   |--- gender_Male <= 0.50
+|   |   |   |--- Residence_type_Urban <= 0.50
+|   |   |   |   |--- work_type_Private <= 0.50
+|   |   |   |   |   |--- bmi <= 33.05
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- bmi >  33.05
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- work_type_Private >  0.50
+|   |   |   |   |   |--- avg_glucose_level <= 57.62
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- avg_glucose_level >  57.62
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- Residence_type_Urban >  0.50
+|   |   |   |   |--- age <= 52.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- age >  52.50
+|   |   |   |   |   |--- age <= 80.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- age >  80.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |--- gender_Male >  0.50
+|   |   |   |--- avg_glucose_level <= 74.96
+|   |   |   |   |--- bmi <= 27.45
+|   |   |   |   |   |--- age <= 66.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- age >  66.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- bmi >  27.45
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- avg_glucose_level >  74.96
+|   |   |   |   |--- bmi <= 25.85
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- bmi >  25.85
+|   |   |   |   |   |--- bmi <= 30.55
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- bmi >  30.55
+|   |   |   |   |   |   |--- class: 0
+|   |--- avg_glucose_level >  76.38
+|   |   |--- age <= 65.50
+|   |   |   |--- avg_glucose_level <= 111.77
+|   |   |   |   |--- class: 0
+|   |   |   |--- avg_glucose_level >  111.77
+|   |   |   |   |--- ever_married_Yes <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- ever_married_Yes >  0.50
+|   |   |   |   |   |--- work_type_Private <= 0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- work_type_Private >  0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |--- age >  65.50
+|   |   |   |--- avg_glucose_level <= 130.57
+|   |   |   |   |--- bmi <= 34.30
+|   |   |   |   |   |--- smoking_status_smokes <= 0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- smoking_status_smokes >  0.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- bmi >  34.30
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- avg_glucose_level >  130.57
+|   |   |   |   |--- work_type_Self-employed <= 0.50
+|   |   |   |   |   |--- gender_Male <= 0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- gender_Male >  0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- work_type_Self-employed >  0.50
+|   |   |   |   |   |--- bmi <= 37.25
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- bmi >  37.25
+|   |   |   |   |   |   |--- class: 0
